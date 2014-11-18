@@ -10,9 +10,7 @@ class Bank(object):
 
     def check_account(self, account):
         if account == account.account_number:
-            return self.accounts[account.account_number]
-        else:
-            print "Account nonexistent"
+            return account
 
     def withdraw(self, account_number, balance,  amount):
         if balance > amount:
