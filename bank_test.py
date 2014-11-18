@@ -19,6 +19,12 @@ class BankTest(unittest.TestCase):
         bank.add_account(account_2)
         self.assertEqual(len(bank.accounts), 2)
 
+    def test_withdraw(self):
+        bank = Bank()
+        account_1 = Account(001, 50)
+        bank.get_account_balance(account_1)
+        self.assertEqual(bank.withdraw(001, 50, 40))
+
     def test_get_account_balance(self):
         bank = Bank()
         account_1 = Account(001, 50)
