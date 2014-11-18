@@ -8,9 +8,8 @@ class Bank(object):
     def get_account_balance(self, account_number):
         return self.accounts.get(account_number)
 
-    def check_account(self, account):
-        if account == account.account_number:
-            return account
+    def check_account(self, account_number):
+        self.accounts.get(account_number) == 'None'
 
     def withdraw(self, account_number, balance,  amount):
         if balance > amount:
