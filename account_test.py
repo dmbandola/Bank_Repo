@@ -9,10 +9,10 @@ class TestAccount(unittest.TestCase):
         self.assertEqual(account.balance, 50)
 
     def setUp(self):
-        self.acc = Account(account_number, balance)
+        self.acc = Account("001", 50)
 
     def test_add_method_raises_typeerror_if_not_int(self):
-        self.assertRaises(TypeError, self.acc, "001", "50")
+        self.assertRaises(TypeError, self.acc.check_if_int, "001", "50")
 
 if __name__ == '__main__':
     unittest.main()
