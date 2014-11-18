@@ -7,6 +7,5 @@ class TestWithdraw(unittest.TestCase):
         withdraw = Withdraw(account_number, balance)
        
 
-
 if __name__ == '__main__':
     unittest.main
