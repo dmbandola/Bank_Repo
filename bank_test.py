@@ -23,7 +23,7 @@ class BankTest(unittest.TestCase):
         bank = Bank()
         account_1 = Account(001, 50)
         bank.get_account_balance(account_1)
-        self.assertEqual(bank.withdraw(001, 50, 40))
+        self.assertEqual(bank.withdraw(001, 50, 40), 10)
 
     def test_get_account_balance(self):
         bank = Bank()
