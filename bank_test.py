@@ -35,7 +35,7 @@ class BankTest(unittest.TestCase):
         bank = Bank()
         account_1 = Account(001, 50)
         bank.check_account(account_1)
-        self.assertEqual(bank.check_account)
+        self.assertEqual(bank.check_account,001)
 
 if __name__ == '__main__':
     unittest.main()
