@@ -25,7 +25,7 @@ class BankTest(unittest.TestCase):
         bank.add_account(account_1)
         self.assertEqual(bank.get_account_balance(001), 50)
 
-    def test_if_account_exists(self):
+    def test_nonexistent_account(self):
         bank = Bank()
         self.assertEqual([], account_number)
         self.assertEqual([], balance)
